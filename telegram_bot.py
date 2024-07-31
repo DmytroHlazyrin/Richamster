@@ -11,8 +11,8 @@ from telegram.ext import (
 )
 
 API_TOKEN = config("TG_TOKEN")
-DJANGO_API_URL = "http://127.0.0.1:8000/api/book/"
-DJANGO_RANDOM_BOOK_URL = "http://127.0.0.1:8000/api/book/random/"
+DJANGO_API_URL = config("API_URL")
+DJANGO_RANDOM_BOOK_URL = config("RANDOM_BOOK_URL")
 
 
 logging.basicConfig(
